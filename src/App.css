@@ -1,0 +1,129 @@
+header{
+  align-items: center;
+  background: linear-gradient(#005fff, #00225a);
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  gap: 60px;
+  justify-content: center;
+}
+
+header h1{
+  color: white;
+  font-size: 2rem;
+}
+
+header input {
+  border: none;
+  height: 35px;
+  padding: 5px 10px;
+  width: 440px;
+}
+
+header input:focus {
+  outline: #00225a;
+  transition: box-shadow .2s;
+  box-shadow: 2px 3px 3px 3px #00000091;
+}
+
+header img{
+  width: 30px;
+}
+
+.div__input{
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+a{
+  text-decoration: none;
+}
+
+header span{
+  background-color: black;
+}
+
+
+.letter_G{
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  margin-left: 10px;
+  color: #f66;
+}
+.letter_I{
+  color: #93f;
+}
+.letter_P{
+  color: #0cf;
+}
+.letter_H{
+  color: #0f9;
+}
+.letter_Y{
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+  color: #fff35c;
+  padding-right: 10px;
+}
+
+.letter_move{
+  animation: letter_move1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+@keyframes letter_move1 {
+  0% {
+    top: -5px;
+  }
+  50% {
+    top: 5px;
+  }
+  100%{
+    top: -5px;
+  }
+}
+
+.gifs{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 50px;
+}
+
+.gifs img{
+  animation: box-shadow;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  border-radius: 6px;
+  box-shadow: 10px 5px 11px 0px #565656;
+  padding: 5px;
+  position: relative;
+  width: 200px;
+}
+
+@keyframes box-shadow {
+  0% {
+    background-color: #f66;
+  }
+  20% {
+    background-color: #93f;
+  }
+  40%{
+    background-color: #0cf;
+  }
+  60%{
+    background-color: #0f9;
+  }
+  80%{
+    background-color: #fff35c;
+  }
+  100%{
+    background-color: #f66;
+  }
+}
+
+
